@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lab-test-form.css">
+    <title>Lab Test Form</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!-- <div class="form-container"> -->
+            <form id="lab-test-form">
+
+                <h2>1. Your Contact Details</h2>
+                <section class="contact-details">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Patient Id if exists">
+                    <input type="text" placeholder="Contact Number">
+                    <input type="text" placeholder="Email id">
+                </section>
+
+                <h2>2. Address</h2>
+                <section class="address">
+                    <input type="text" placeholder="H-No">
+                    <input type="text" placeholder="Street">
+                    <input type="text" placeholder="Area">
+                    <br><label for="district">District</label>
+                    <select name="district" id="district">
+                        <option>Choose</option>
+                        <option value="shahdara">Shahdara</option>
+                        <option value="rohini">Rohini</option>
+                        <option value="Seemapuri">Seemapuri</option>
+                    </select>
+                </section>
+
+                <h2>3. Choose the Test Type (Check atleast one box without fail)</h2>
+                <section class="test-type">
+                    <input type="checkbox" id="cbc" name="cbc" value="CBC">
+                    <label for="cbc">CBC</label><br>
+                    <input type="checkbox" id="complete-urine" name="complete-urine" value="Complete Urine">
+                    <label for="complete-urine">Complete Urine</label><br>
+                    <input type="checkbox" id="lipid-profile" name="lipid-profile" value="Lipid Profile">
+                    <label for="lipid-profile">Lipid Profile</label><br>
+                    <input type="checkbox" id="thyroid-stimulating-hormone" name="thyroid-stimulating-hormone"
+                        value="Thyroid Stimulating Hormone">
+                    <label for="thyroid-stimulating-hormone">Thyroid Stimulating Hormone</label><br>
+                    <input type="checkbox" id="glucose-test" name="glucose-test" value="Glucose Test">
+                    <label for="glucose-test">Glucose Test</label><br>
+                </section>
+
+                <h2>4. Do you want a hard copy of the report also?</h2>
+                <section class="hard-copy">
+                    <input type="radio" id="yes" name="hard-copy" value="Yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="hard-copy" value="No">
+                    <label for="no">No</label><br>
+                </section>
+
+                <h2>5. Select Your Comfortable Date and Time</h2>
+                <section class="date-time">
+                    <input type="datetime-local" id="appointment-time" name="appointment-time" value="2022-12-12T19:30"
+                        min="2022-12-11T00:00" max="2023-01-15T00:00">
+                </section>
+
+            </form>
+            <!-- </div> -->
+            <div class="image-container">
+                <img src="../assets/lab-test/lab-test.jpg" alt="lab-test">
+            </div>
+        </div>
+        <div class="form-buttons">
+            <button type="reset" form="lab-test-form">Reset</button>
+            <button type="submit" form="lab-test-form">Submit</button>
+        </div>
+    </main>
+</body>
+
+</html>
